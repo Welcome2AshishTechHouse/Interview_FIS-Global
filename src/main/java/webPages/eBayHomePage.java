@@ -10,10 +10,10 @@ public class eBayHomePage {
 
     private WebDriver driver;
 
-    @FindBy(id = "gh-ac")
+    @FindBy(xpath = "//input[@title='Search']")
     private WebElement searchBox;
 
-    @FindBy(id = "gh-btn")
+    @FindBy(xpath = "//button[@value='Search']")
     private WebElement searchButton;
 
     @FindBy(xpath = "//ul//li[@data-view='mi:1686|iid:1']//span[@aria-level='3']")

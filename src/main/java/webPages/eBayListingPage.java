@@ -14,7 +14,7 @@ public class eBayListingPage {
     @FindBy(id = "atcBtn_btn_1")
     private WebElement addToCartButton;
 
-    @FindBy(id = "gh-cart-n")
+    @FindBy(xpath = "//a[contains(@href,'//cart.ebay')]//span[@class='badge']")
     private WebElement cartCount;
 
     public eBayListingPage(WebDriver driver){

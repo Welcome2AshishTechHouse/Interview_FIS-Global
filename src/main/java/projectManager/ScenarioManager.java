@@ -1,21 +1,16 @@
 package projectManager;
 
 import io.cucumber.java.Scenario;
+import lombok.Getter;
 
 public class ScenarioManager {
 
+    @Getter
     private static final ScenarioManager instance = new ScenarioManager();
+    @Getter
     private Scenario scenario;
 
     private ScenarioManager() {
-    }
-
-    public static ScenarioManager getInstance() {
-        return instance;
-    }
-
-    public Scenario getScenario() {
-        return scenario;
     }
 
     public void setScenario(Scenario scenario) {
