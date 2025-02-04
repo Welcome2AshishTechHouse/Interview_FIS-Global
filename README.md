@@ -1,7 +1,9 @@
 # 🚀 Automation Framework for eBay UI and CoinDesk API Functionalities
 
+
 ## 📋 Introduction
 This project encompasses automated testing for both eBay UI functionalities and CoinDesk API functionalities. Utilizing the Maven build tool, the framework incorporates best practices for efficient and reliable test automation. Below is a detailed overview of the project structure, key components, and their respective functionalities.
+
 
 ## 📂 Project Structure
 
