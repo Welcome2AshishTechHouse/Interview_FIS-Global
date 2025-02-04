@@ -68,7 +68,7 @@ public class EBaySteps {
     @Then("Validate cart updated with the correct number of items")
     public void iShouldSeeTheCartUpdatedWithTheCorrectNumberOfItems() {
         String cartCount = listingPage.getCartCount();
-        Assert.assertTrue(Integer.parseInt(cartCount) > 0, "Cart count should be greater than 0.");
+        Assert.assertEquals(Integer.parseInt(cartCount), 1, "Cart count should be 1");
         scenario.log("<b>Cart updated with the correct number of items:</b> " + cartCount);
         screenshotUtils.captureScreenshot("Cart_Updated_With_Correct_Items");
     }
